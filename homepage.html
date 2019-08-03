@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+function setdate()
+{
+var t=new Date();
+var YYYY=t.getFullYear();
+var MM=t.getMonth()+1;
+var DD=t.getDate();
+var zM="";
+if(MM<10){zM="0"}else{zM=""}
+var zD="";
+if(DD<10){zD="0"}else{zD=""}
+document.getElementById("date").innerHTML=YYYY+"-"+zM+MM+"-"+zD+DD;
+}
+function settime()
+{
+var t=new Date();
+var hh=t.getHours();
+var mm=t.getMinutes();
+var ss=t.getSeconds();
+var zh="";
+if(hh<10){zh="0"}else{zh=""}
+var zm="";
+if(mm<10){zm="0"}else{zm=""}
+var zs="";
+if(ss<10){zs="0"}else{zs=""}
+document.getElementById("time").innerHTML=zh+hh+":"+zm+mm+":"+zs+ss;
+}
+setInterval(function() {setdate()},500);
+setInterval(function() {settime()},200);
+</script>
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" class="js-site-favicon" href="tmp.png" />
+<title>Homepage - Umbrella Studio</title>
+<style type="text/css">
+#time{font-size:128px;color:#FFFFFF;}
+#date{font-size:64px;color:#FFFFFF;}
+#search{height:30px;color:#FFFFFF;background-color:#444444;}
+#submit{height:30px;color:#FFFFFF;background-color:#444444;}
+</style>
+<link rel="stylesheet" type="text/css" href="std.css">
+</head>
+<body>
+<a href="/"><img src="tmp.png" height="50" width="50" alt="☂" /></a><b><span id="title">Umbrella Studio</span></b>
+<hr style=" height:2px;border:none;border-top:2px dotted #666666;" />
+<center>
+<br />
+<br />
+<div id="date">...</div>
+<div id="time">...</div>
+<br />
+<br />
+<form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+    <input id="search" type="text" name="word" size="50" placeholder="Baidu search...">
+    <input id="submit" type="submit" value="Search">
+</form>
+</center>
+<hr style=" height:2px;border:none;border-top:2px dotted #666666;" />
+<a href="/"><div align="center">Copyright(C)2019 Umbrella Studio</div></a>
+</body>
+</html>

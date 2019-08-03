@@ -1,0 +1,11 @@
+*{color:#FFFFFF;font-family:"Arial";}
+body{background-color:#222222}
+div{color:#888888;font-size:16px;}
+span{color:#FFFFFF;font-size:16px;}
+p{color:#888888;font-size:16px;}
+a{text-decoration: none;color:#55CC00;font-size:16px;}
+#title{font-size: 32px;text-align:left;color:#888888;}
+.index{background-color:#555555}
+#active{color:#FFFFFF;}
+.article{text-align:left;height:50px;width:500px;background:#44BB00;color:#FFFFFF;font-size:20px;}
+button{background-color:#666666;color:#FFFFFF}
