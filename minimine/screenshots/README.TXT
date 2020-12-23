@@ -1,1 +1,1 @@
-The screenshots are outdated!
+The screenshots are all from MiniMine season 0!
